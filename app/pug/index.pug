@@ -1,0 +1,346 @@
+doctype html
+html(lang="en")
+    include partials/head
+    body
+        main.main-wrap
+            include ./partials/header
+            section.first-section
+                img(src="images/required/homepage-main-image.jpg" alt="")
+                .first-section_panel
+                    .first-section_title Дизайн-проект и ремонт в одной компании
+                    .first-section_descr Мы наделяем дома смыслом
+                    .first-section_btn
+                        button.btn Обсудить проект
+            section.about-section
+                .row.about-section_row
+                    .col-12
+                        .about-section_content.left
+                            .about-section_title Fortes
+                    .col-lg-7
+                        .about-section_content.left
+                            .about-section_text — команда специалистов, объединенная общими идеями и культивирующая современный дизайн интерьера. Неравнодушие и искренняя любовь к своему делу помогает нам реализовать самые смелые дизайнерские решения. Мы не используем шаблоны, когда создаем дизайн квартиры или дизайн дома — мы мыслим шире и стараемся оставить ча стичку себя в каждом своем проекте.
+                    .col-lg-5
+                        .about-section_content.right
+                            .about-section_text Доверие наших клиентов — фундамент <br/> каждого успешного проекта
+                            .about-section_note-by Олег Бушанский founder Fortes
+            section.work-item-section
+                .row.work-item_row
+                    .col.col-lg-6
+                        .work-item
+                            .work-item_content
+                                .work-item_img
+                                    img(src="images/required/homepage-main-image.png" alt="")
+                                .work-item_title Дизайн-проект
+                                .work-item_btn
+                                    .btn Подробнее
+                    .col.col-lg-6
+                        .work-item
+                            .work-item_content
+                                .work-item_img
+                                    img(src="images/required/homepage-main-image.png" alt="")
+                                .work-item_title Ремонт
+                                .work-item_btn
+                                    .btn Подробнее
+            section.steps-section
+                .steps-section_container
+                    .steps-section_title Детально рассчитываем <mark>стоимость всего ремонта</mark> <mark>до</mark> разработки дизайн-проекта
+                    .row
+                        .col-lg-3
+                            .step_icon
+                                .step-icon-1
+                            .step_text Подбираем и утверждаем подходящий стиль
+                        .col-lg-3
+                            .step_icon
+                                .step-icon-2
+                            .step_text Вместе с вами определяем ценовой диапазон на материалы и технику. При необходимости оптимизируем расчет
+                        .col-lg-3
+                            .step_icon
+                                .step-icon-3
+                            .step_text Помогаем вам в подборе материалов на стадии визуализации учитывая границы бюджета
+                        .col-lg-3.step-finish-item
+                            .step_finish Именно эти шаги позволяют нам завершить ремонт в рамках заданного бюджета
+            section.process-section
+                .row.no-gutters
+                    .col-lg-5
+                        .process-section_block
+                            .process-section_image
+                                img(src="images/required/progress-image-1.jpg")
+                            .process-section_logo-wrap
+                                .process-section_logo
+                    .col-lg-7
+                        .process-section_content
+                            .process-section_title Внимательно и бережно относимся к процессу
+                            .process-section_descr Это помогает нам качественно реализовать желания наших клиентов оставаясь в рамках описанных бюджетов.
+                            .row
+                                .col-md-6
+                                    .process-item
+                                        .row
+                                            .col-2
+                                                .process-item_icon.progress-icon-1
+                                            .col-10
+                                                .process-item_content
+                                                    .process-item_title Контролируем каждый этап
+                                                    .process-item_text Авторский и технический надзор нашей командой на каждом из этапов работы
+                                .col-md-6
+                                    .process-item
+                                        .row
+                                            .col-2
+                                                .process-item_icon.progress-icon-2
+                                            .col-10
+                                                .process-item_content
+                                                    .process-item_title Обеспечиваем лучший микроклимат
+                                                    .process-item_text Наши инженеры помогут подобрать лучшее оборудование и сделать теплотехнический расчет
+                                .col-md-6
+                                    .process-item
+                                        .row
+                                            .col-2
+                                                .process-item_icon.progress-icon-3
+                                            .col-10
+                                                .process-item_content
+                                                    .process-item_title Подбираем оптимальные материалы и комплектацию
+                                                    .process-item_text Мы грамотно распределяем бюджет клиента, и предлагаем кастомные решения
+                                .col-md-6
+                                    .process-item
+                                        .row
+                                            .col-2
+                                                .process-item_icon.progress-icon-4
+                                            .col-10
+                                                .process-item_content
+                                                    .process-item_title Предлагаем лучшие <br/> условия доставки
+                                                    .process-item_text Проверяем качество каждой доставки, с заменой бракованных материалов.
+
+                                .col-12
+                                    button.btn.btn-dark Расчитать стоимость
+            section.process-section
+                .row.no-gutters
+                    .col-lg-7
+                        .process-section_content
+                            .process-section_title Предлагаем гибкие клиентоориентированные решения
+                            .process-section_descr Наши процессы продуманы и оптимизированы для достижения лучшего результата в работе над проектом
+                            .row
+                                .col-md-6
+                                    .process-item
+                                        .row
+                                            .col-2
+                                                .process-item_icon.progress-icon-5
+                                            .col-10
+                                                .process-item_content
+                                                    .process-item_title Придерживаемся дедлайнов на каждом этапе
+                                                    .process-item_text Только сертифицированные проект- менеджеры и гибкое планирование
+                                                    a.process-item_link(href="#") График производства работ
+                                .col-md-6
+                                    .process-item
+                                        .row
+                                            .col-2
+                                                .process-item_icon.progress-icon-6
+                                            .col-10
+                                                .process-item_content
+                                                    .process-item_title Составляем точную и прозрачную смету
+                                                    .process-item_text Рассчитываем смету за 3 дня, с минимальной погрешностью
+                                                    a.process-item_link(href="#") Пример сметы и договора
+                                .col-md-6
+                                    .process-item
+                                        .row
+                                            .col-2
+                                                .process-item_icon.progress-icon-7
+                                            .col-10
+                                                .process-item_content
+                                                    .process-item_title Обеспечиваем видеонаблюдение
+                                                    .process-item_text Процесс строительства доступен вам 24\7 в онлайн
+                                                    a.process-item_link(href="#") Смотреть видео
+                                .col-md-6
+                                    .process-item
+                                        .row
+                                            .col-2
+                                                .process-item_icon.progress-icon-8
+                                            .col-10
+                                                .process-item_content
+                                                    .process-item_title Предоставляем страховку
+                                                    .process-item_text Осуществляем страхование каждого объекта
+                                                    a.process-item_link(href="#") Подробнее о страховке
+                    .col-lg-5
+                        .process-section_block
+                            .process-section_image
+                                img(src="images/required/progress-image-2.jpg")
+                            .process-section_logo-wrap.left-type
+                                .process-section_logo
+            section.about-process
+                .row
+                    .col-lg-6
+                        .about-process_title О процессах
+                        .about-process_steps-wrap
+                            .about-process_step
+                                .about-process_step_section
+                                    .about-process_step_number 1
+                                .about-process_step_section
+                                    .about-process_step_title Вы оставляете заявку
+                                    .about-process_step_text Наш менеджер связывается с вами
+                            .about-process_step
+                                .about-process_step_section
+                                    .about-process_step_number 2
+                                .about-process_step_section
+                                    .about-process_step_title Мы готовим смету
+                                    .about-process_step_text Анализируем ваш проект и рассчитываем максимально точную смету
+                            .about-process_step
+                                .about-process_step_section
+                                    .about-process_step_number 3
+                                .about-process_step_section
+                                    .about-process_step_title Составляем договор
+                                    .about-process_step_text Обеспечиваем страховку для безопасности вашего объекта
+                            .about-process_step
+                                .about-process_step_section
+                                    .about-process_step_number 4
+                                .about-process_step_section
+                                    .about-process_step_title Приступаем к работе
+                                    .about-process_step_text Подключаем круглосуточное видеонаблюдение
+                            .about-process_step
+                                .about-process_step_section
+                                    .about-process_step_number 5
+                                .about-process_step_section
+                                    .about-process_step_title Контролируем качество
+                                    .about-process_step_text Наши специалисты являются сертифицированными специалистами.
+                            .about-process_step
+                                .about-process_step_section
+                                    .about-process_step_number 6
+                                .about-process_step_section
+                                    .about-process_step_title Сдаем объект
+                                    .about-process_step_text И разделяем счастливые эмоции вместе в вами
+
+                    .col-lg-6
+                        .about-process_block-container
+                            .about-process_block
+                                .row
+                                    .col-3
+                                        .about-process_block_icon
+                                    .col-9
+                                        .about-process_block_text Слышим и учитываем все пожелания наших клиентов
+                            .about-process_block
+                                .row
+                                    .col-3
+                                        .about-process_block_icon
+                                    .col-9
+                                        .about-process_block_text Помогаем и поддерживаем на каждом этапе
+                            .about-process_block
+                                .row
+                                    .col-3
+                                        .about-process_block_icon
+                                    .col-9
+                                        .about-process_block_text Дизайн, ремонт ... <br/> и эмпатия в одной компании!
+
+
+            section.reviews
+                .reviews_title Что говорят наши клиенты
+                .row
+                    .col-md-4
+                        .reviews_block
+                            .reviews_block_image
+                                img(src="images/example/review-img.png")
+                            .reviews_block_footer
+                                .reviews_block_title Ремонт квартиры
+                                .reviews_block_link-wrap
+                                    a(href="#")
+                                        span Открыть профиль
+                                        span.fb-icon
+                    .col-md-4
+                        .reviews_block
+                            .reviews_block_image
+                                img(src="images/example/review-img.png")
+                                .reviews_block_text текст текст текст текст
+                            .reviews_block_footer
+                                .reviews_block_title Ремонт квартиры отзыв тут 2 строки отзыв клиента
+                                .reviews_block_link-wrap
+                                    a(href="#")
+                                        span Открыть профиль
+                                        span.fb-icon
+                    .col-md-4
+                        .reviews_block
+                            .reviews_block_image
+                                img(src="images/example/review-img.png")
+                                .reviews_block_text текст текст текст текст
+                            .reviews_block_footer
+                                .reviews_block_title Ремонт квартиры
+                                .reviews_block_link-wrap
+                                    a(href="#")
+                                        span Открыть профиль
+                                        span.fb-icon
+
+            section.portfolio
+                .portfolio_head
+                    .portfolio_title Наше портфолио
+                    .portfolio_text Разработка дизайн-проекта и ремонт в новостроях и жилых комплексах Днепра
+                .portfolio_content
+                    .row.no-gutters
+                        .col-12.col-md-6
+                            .portfolio_item
+                                .portfolio_item_name ЖК Comfort City
+                                .portfolio_item_image
+                                    img(src="images/required/img-portfolio-1.jpg")
+                        .col-12.col-md-6
+                            .portfolio_item
+                                .portfolio_item_name ЖК Comfort City
+                                .portfolio_item_image
+                                    img(src="images/required/img-portfolio-2.jpg")
+                        .col-12.col-md-6
+                            .portfolio_item
+                                .portfolio_item_name Проект “Glossy”
+                                .portfolio_item_image
+                                    img(src="images/required/img-portfolio-3.jpg")
+                        .col-12.col-md-6
+                            .portfolio_item
+                                .portfolio_item_name ЖК Новодворянский
+                                .portfolio_item_image
+                                    img(src="images/required/img-portfolio-4.jpg")
+                        .col-12.col-md-6
+                            .portfolio_item
+                                .portfolio_item_name ЖК Салют
+                                .portfolio_item_image
+                                    img(src="images/required/img-portfolio-5.jpg")
+                        .col-12.col-md-6
+                            .portfolio_item
+                                .portfolio_item_name ЖК Панорама
+                                .portfolio_item_image
+                                    img(src="images/required/img-portfolio-6.jpg")
+
+                .portfolio_footer
+                    button.btn.btn-dark Смотреть все проекты
+            section.team
+                .team_title Выделяем отдельную команда под каждый проект
+                .row
+                    .col-lg-4
+                        .team_block
+                            .team_block_img
+                                img(src="images/example/engineer.jpg")
+                            .team_block_name Имя дизайнера
+                            .team_block_position дизайнер
+                            .team_block_descr Имеет 7 лет практического опыта, что позволяет усовершенствовать работу на каждом объекте и доводить ее до идеала!
+                    .col-lg-4
+                        .team_block
+                            .team_block_img
+                                img(src="images/example/engineer.jpg")
+                            .team_block_name Андрей Чиженок
+                            .team_block_position инженер с 11 летним опытом
+                            .team_block_descr Имеет 7 лет практического опыта, что позволяет усовершенствовать работу на каждом объекте и доводить ее до идеала!
+                    .col-lg-4
+                        .team_block
+                            .team_block_img
+                                img(src="images/example/engineer.jpg")
+                            .team_block_name Имя проект-менеджера
+                            .team_block_position проект-менеджер
+                            .team_block_descr Имеет 7 лет практического опыта, что позволяет усовершенствовать работу на каждом объекте и доводить ее до идеала!
+            section.contact-form
+                .contact-form_title Давайте повысим комфорт вашего жизненного пространства вместе!
+                .contact-form_form
+                    form
+                        .row
+                            .col-lg-4
+                                input.contact-form_input(placeholder="Введите имя")
+                            .col-lg-4
+                                input.contact-form_input(placeholder="Введите телефон")
+                            .col-lg-4
+                                button.btn.btn-black Отправить запрос
+            include partials/map
+            include partials/footer
+        include partials/scripts
+        script(src="js/vendor.js")
+        script(src="js/custom.js")
+        script(src="js/custom.js")

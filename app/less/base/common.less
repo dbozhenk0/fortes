@@ -1,0 +1,125 @@
+
+* {
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+@regular: 'Circe', sans-serif;
+@light: 'Circe-Light', sans-serif;
+@bold: 'Circe-Bold', sans-serif;
+
+body {
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  line-height: normal;
+  font-family: @regular;
+}
+
+body.fix {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+html.fix {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  transition: 0.4s ease;
+
+  &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main-wrap {
+  min-height: 100vh;
+}
+
+.content {
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.common-container {
+  max-width: 1790px;
+  margin: 0 auto;
+}
+
+button {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn {
+  min-width: 280px;
+  text-align: center;
+  background: transparent;
+  outline: none;
+  border: 2px solid #858585;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #fff;
+  transition: 0.4s ease;
+  height: 54px;
+  font-family: @bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover, &:active {
+    box-shadow: inset 0 0 0 2em #fff;
+    color: #000;
+  }
+
+  &.btn-dark {
+    color: #000;
+    border-color: #000;
+
+    &:hover, &:active {
+      box-shadow: inset 0 0 0 2em #000;
+      color: #fff;
+    }
+  }
+
+  &.btn-black {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+
+    &:hover, &:active {
+      box-shadow: inset 0 0 0 2em #fff;
+      color: #000;
+    }
+  }
+}
