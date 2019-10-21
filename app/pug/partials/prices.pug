@@ -1,0 +1,302 @@
+section.price
+    .container
+        .price_title Тарифные планы:
+        .tarif.standart
+            | Standart
+            .cost
+                | от 200$/м
+                sup 2
+            a.more(href='#price-table', data-tarif='standart') Подробнее
+        .tarif.comfort
+            | Comfort
+            .cost
+                | от 230$/м
+                sup 2
+            a.more(href='#price-table', data-tarif='comfort') Подробнее
+        .tarif.comfort-plus
+            | Comfort+
+            .cost
+                | от 280$/м
+                sup 2
+            a.more(href='#price-table', data-tarif='comfort-plus') Подробнее
+        .tarif.premium
+            | Premium
+            .cost
+                | от 330$/м
+                sup 2
+            a.more(href='#price-table', data-tarif='premium') Подробнее
+        #price-table.table
+            .tr
+                .th Основные отличия:
+                .th.standart Standart
+                .th.comfort Comfort
+                .th.comfort-plus Comfort+
+                .th.premium Premium
+            .tr
+                .td Изображение тарифного плана
+                .td.img.standart
+                    img(src='http://krepost.co/wp-content/uploads/2018/10/Standart_flat.jpg', alt='')
+                .td.img.comfort
+                    img(src='http://krepost.co/wp-content/uploads/2018/10/Comfort_flat.jpg', alt='')
+                .td.img.comfort-plus
+                    img(src='http://krepost.co/wp-content/uploads/2018/10/Comfort_plus_flat.jpg', alt='')
+                .td.img.premium
+                    img(src='http://krepost.co/wp-content/uploads/2018/10/Premium_flat.jpg', alt='')
+            .tr
+                .td Работы по демонтажу
+                .td.standart
+                    i.minus -
+                .td.comfort
+                    i.plus +
+                .td.comfort-plus
+                    i.plus +
+                .td.premium
+                    i.plus +
+            .tr
+                .td Водяной/электро теплый пол
+                .td.standart
+                    i.minus -
+                    | /In Term
+                .td.comfort Hemstedt/SPK
+                .td.comfort-plus Hemstedt/SPK
+                .td.premium Devi/Rehau
+            .tr
+                .td
+                    | Водопровод
+                    i.tooltip-icon.far.fa-question-circle
+                    .tooltip
+                        p
+                            | Все клиенты задают вопрос, какие трубы использовать в инженерных сетях. Ответить на него однозначно сложно, так как каждый производитель того или иного материала хвалит свой. Поэтому мы решили пойти от обратного: изучить, насколько часто текут трубы, по каким причинам и как избежать этого.
+                        a(href='http://krepost.co/it-is-interesting-to-read/water-pipes/') Подробнее
+                .td.standart Полипропилен SPK
+                .td.comfort Полипропилен SPK
+                .td.comfort-plus Полипропилен SPK
+                .td.premium Сшитий полиетилен Rehau
+            .tr
+                .td Канализация
+                .td.standart Украина
+                .td.comfort Украина
+                .td.comfort-plus Украина
+                .td.premium Германия Ostendorf/Rehau
+            .tr
+                .td
+                    | Кондиционирование
+                    i.tooltip-icon.far.fa-question-circle
+                    .tooltip
+                        p Без внутренних и наружных блоков
+                .td.standart
+                    i.plus +
+                .td.comfort
+                    i.plus +
+                .td.comfort-plus
+                    i.plus +
+                .td.premium
+                    i.plus +
+            .tr
+                .td
+                    | Электроснабжение
+                    i.tooltip-icon.far.fa-question-circle
+                    .tooltip
+                        p Клиенты часто спрашивают какой кабель использовать ШВВП или ВВГ
+                        a(href='http://krepost.co/it-is-interesting-to-read/power-supply/') Подробнее
+                .td.standart ШВВП
+                .td.comfort ШВВП
+                .td.comfort-plus ШВВП
+                .td.premium ВВГ
+            .tr
+                .td Потолок
+                .td.standart Натяжной
+                .td.comfort Натяжной
+                .td.comfort-plus ГКЛ
+                .td.premium ГКЛ
+            .tr
+                .td Облицовка керамической плиткой
+                .td.standart
+                    i.plus +
+                .td.comfort
+                    i.plus +
+                .td.comfort-plus
+                    i.plus +
+                .td.premium
+                    i.plus +
+            .tr
+                .td Черновая отделка стен
+                .td.standart Штукатурка
+                .td.comfort Штукатурка
+                .td.comfort-plus Штукатурка
+                .td.premium ГКЛ/Штукатурка
+            .tr
+                .td Малярные работы
+                .td.standart
+                    i.plus +
+                .td.comfort
+                    i.plus +
+                .td.comfort-plus
+                    i.plus +
+                .td.premium
+                    i.plus +
+            .tr
+                .td
+                    | Защита от трещин
+                    i.tooltip-icon.far.fa-question-circle
+                    .tooltip
+                        p Трещин у нас нет, так как мы защищаем от них флизелином либо 2-й заплитовкой ГКЛ
+                .td.standart
+                    i.plus +
+                .td.comfort
+                    i.plus +
+                .td.comfort-plus
+                    i.plus +
+                .td.premium
+                    i.plus +
+            .tr
+                .td Покраска
+                .td.standart Валик
+                .td.comfort Валик
+                .td.comfort-plus Валик
+                .td.premium Валик/Безвоздушная
+            .tr
+                .td Напольное покрытие
+                .td.standart Ламинат
+                .td.comfort Ламинат
+                .td.comfort-plus Ламинат
+                .td.premium Ламинат/Паркет
+            .tr
+                .td Монтаж напольных плинтусов
+                .td.standart
+                    i.plus +
+                .td.comfort
+                    i.plus +
+                .td.comfort-plus
+                    i.plus +
+                .td.premium
+                    i.plus +
+            .tr
+                .td Установка входных дверей
+                .td.standart
+                    i.minus -
+                .td.comfort
+                    i.plus +
+                .td.comfort-plus
+                    i.plus +
+                .td.premium
+                    i.plus +
+            .tr
+                .td Вентиляция
+                .td.standart
+                    i.minus -
+                .td.comfort
+                    i.plus +
+                .td.comfort-plus
+                    i.plus +
+                .td.premium
+                    i.plus +
+            .tr
+                .td Перегородки
+                .td.standart
+                    i.minus -
+                .td.comfort Пазогребневая/ГКЛ
+                .td.comfort-plus Пазогребневая/ГКЛ
+                .td.premium ГКЛ
+            .tr
+                .td Стяжка пола
+                .td.standart
+                    i.minus -
+                .td.comfort
+                    i.minus -
+                .td.comfort-plus
+                    i.plus +
+                .td.premium
+                    i.plus +
+            .tr
+                .td Подрезка под 45 кафельной плитки
+                .td.standart
+                    i.minus -
+                .td.comfort
+                    i.minus -
+                .td.comfort-plus
+                    i.minus -
+                .td.premium
+                    i.plus +
+            .tr
+                .td
+                    | Острые углы на стенах и потолках
+                    i.tooltip-icon.far.fa-question-circle
+                    .tooltip
+                        p Внешние углы преимущества и недостатки.
+                        a(href='http://krepost.co/it-is-interesting-to-read/corners/') Подробнее
+                .td.standart
+                    i.minus -
+                .td.comfort
+                    i.minus -
+                .td.comfort-plus
+                    i.minus -
+                .td.premium
+                    i.plus +
+            .tr
+                .td
+                    | Звукоизоляция стен/потолков
+                    i.tooltip-icon.far.fa-question-circle
+                    .tooltip
+                        p
+                            | В акустике в дБ измеряют уровень звукового давления относительно эталонного источника звука. Например, материал с индексом звукоизоляции 6 дБ будет пропускать звук вдвое меньшей громкости относительно первоначального источника.
+                        a(href='http://krepost.co/it-is-interesting-to-read/soundproofing/') Подробнее
+                .td.standart
+                    i.far.fa-star
+                    i.far.fa-star
+                .td.comfort
+                    i.far.fa-star
+                    i.far.fa-star
+                    i.far.fa-star
+                .td.comfort-plus
+                    i.far.fa-star
+                    i.far.fa-star
+                    i.far.fa-star
+                .td.premium
+                    i.far.fa-star
+                    i.far.fa-star
+                    i.far.fa-star
+                    i.far.fa-star
+            .tr
+                .td Гарантия
+                .td.standart 2 года
+                .td.comfort 5 лет
+                .td.comfort-plus 5 лет
+                .td.premium 10 лет
+            .tr
+                .td Чистовые материалы
+                .td.standart
+                    | от 30 $/м
+                    sup 2
+                .td.comfort
+                    | от 50 $/м
+                    sup 2
+                .td.comfort-plus
+                    | от 50 $/м
+                    sup 2
+                .td.premium
+                    i.minus -
+            .tr(style='display:none;')
+                .td Дизайн-проект
+                .td.standart
+                    a(href='/design-project/') Бесплатно Стандартный
+                .td.comfort
+                    a(href='/design-project/') Бесплатно Стандартный
+                .td.comfort-plus
+                    a(href='/design-project/') Платно Индивидуальный
+                .td.premium
+                    a(href='/design-project/') Платно Индивидуальный
+            .tr.total
+                .td Работа + черновые материалы
+                .td.standart
+                    | от 200$/м
+                    sup 2
+                .td.comfort
+                    | от 230$/м
+                    sup 2
+                .td.comfort-plus
+                    | от 280$/м
+                    sup 2
+                .td.premium
+                    | от 330$/м
+                    sup 2

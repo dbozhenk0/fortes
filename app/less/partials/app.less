@@ -692,7 +692,7 @@
   }
 
   &_block {
-    &_image {
+    &_content {
       height: 315px;
       width: 100%;
       position: relative;
@@ -704,19 +704,6 @@
         position: relative;
         z-index: 2;
       }
-    }
-
-    &_text {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 20px 30px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.4);
-      color: #fff;
-      z-index: 10;
-      font-size: 18px;
     }
 
     &_footer {
@@ -768,6 +755,30 @@
 }
 
 .portfolio {
+  &_filter {
+    background: #fff;
+    padding-top: 160px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      width: 300px;
+      line-height: 30px;
+      font-size: 16px;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      text-align: left;
+      background-color: transparent;
+      transition: 0.2s;
+      cursor: pointer;
+
+      &.active {
+        border-color: #000;
+      }
+    }
+  }
+
   &_head {
     padding: 50px;
     background: #000;
@@ -808,6 +819,41 @@
     width: 100%;
     overflow: hidden;
 
+    &::before {
+      content: '';
+      display: block;
+      top: 0;
+      left: 0;
+      transition: 0.5s ease;
+      background: rgba(0, 0, 0, 0.20);
+      position: absolute;
+      z-index: 22;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      &::before {
+        background: rgba(0, 0, 0, 0);
+      }
+
+      .portfolio_item_image {
+        transform: scale(1.08);
+      }
+    }
+
+    &_link {
+      position: absolute;
+      z-index: 44;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
     &_image {
       position: absolute;
       top: 0;
@@ -820,6 +866,14 @@
       align-items: center;
       justify-content: center;
       z-index: 1;
+      overflow: hidden;
+      transition: 0.5s ease;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     &_name {
@@ -828,7 +882,7 @@
       font-size: @titleFont;
       font-family: @bold;
       position: relative;
-      z-index: 2;
+      z-index: 33;
 
       .design-type {
         display: block;
@@ -1366,9 +1420,235 @@
       font-family: @light;
       color: rgba(0, 0, 0, 0.7);
     }
+
     &_btn-wrap {
       text-align: center;
       margin-bottom: 30px;
     }
   }
+}
+
+.repair-head {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 55px;
+    background: url(../images/svg/mouse.svg) no-repeat center;
+    background-size: contain;
+    animation: mouseMove 1.7s ease-in-out infinite;
+    z-index: 1;
+  }
+
+  &_title {
+    margin-left: 150px;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 1;
+    max-width: 455px;
+    position: relative;
+    z-index: 15;
+  }
+
+  &_video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 10;
+    }
+
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 5;
+    }
+  }
+}
+
+.price {
+  background: #f1f2f5;
+  padding: 68px 0;
+  box-shadow: inset 0 0 26px rgba(0, 0, 0, .09);
+
+  .container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &_title {
+    padding: 0 0 46px;
+    font-size: @titleFont;
+    font-family: @bold;
+  }
+}
+
+.tarif {
+  display: none;
+}
+
+.table {
+  display: table;
+  width: 100%;
+
+  .td, .th {
+    width: 145px;
+    display: table-cell;
+    min-height: 40px;
+    border-bottom: 1px solid #e8ebed;
+    padding: 12px 0;
+    vertical-align: middle;
+  }
+
+  .th {
+    font-size: 21px;
+    font-weight: 700;
+    height: 80px;
+  }
+
+  .tr {
+    display: table-row;
+  }
+
+  .td {
+    font-size: 13.5px;
+    font-weight: 500;
+    position: relative;
+
+    &.img {
+      padding: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .td + .td, .th + .th {
+    text-align: center;
+    width: 248px;
+    margin-left: 22px;
+    background: #fff;
+    border-left: 22px solid #f1f2f5;
+  }
+
+  .td {
+    i.tooltip-icon {
+      cursor: pointer;
+      color: #858585;
+      font-size: 16px;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .total .td + .td, .tarif .cost {
+    background: #858585;
+    line-height: 56px;
+    padding: 0;
+    border-bottom: none;
+    font-size: 21px;
+    font-weight: 700;
+  }
+}
+
+.table .total .td + .td, .tarif .cost {
+  background: #858585;
+  line-height: 56px;
+  padding: 0;
+  border-bottom: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 23px 24px;
+  left: 100%;
+  margin-left: 10px;
+  z-index: 1;
+  width: 420px;
+  top: 50%;
+  transform: translate(0, -50%);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, .09);
+
+  &.active {
+    display: block;
+  }
+
+  a {
+    float: right;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .tarif {
+    text-align: center;
+    border-bottom: 1px solid #e8ebed;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 0;
+    line-height: 50px;
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .diff .article .left, .diff .article .right, .tarif {
+    display: block;
+  }
+
+  .table {
+    .td, .th {
+      display: none;
+    }
+
+    .th + .th {
+      font-size: 15px;
+    }
+
+    .td.active, .th.active {
+      display: table-cell;
+    }
+  }
+
+
+
+
 }

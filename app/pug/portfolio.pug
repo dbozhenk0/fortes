@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    include partials/head
+    body
+        main.main-wrap
+            section.portfolio
+                .portfolio_filter.js-p-filter
+                    a(data-filter="all" href="#" role="button").active All
+                    a(data-filter="implement" href="#" role="button") Implement
+                    a(data-filter="visual" href="#" role="button") Visual
+                .portfolio_content
+                    .row.no-gutters.js-p-items
+                        .col-12.col-md-6(data-category="implement")
+                            .portfolio_item
+                                a.portfolio_item_link(href="#")
+                                .portfolio_item_name ЖК Comfort City
+                                .portfolio_item_image
+                                    img(src="images/example/img-portfolio-1.jpg")
+                        .col-12.col-md-6(data-category="visual")
+                            .portfolio_item
+                                a.portfolio_item_link(href="#")
+                                .portfolio_item_name ЖК Comfort City
+                                .portfolio_item_image
+                                    img(src="images/example/img-portfolio-2.jpg")
+                        .col-12.col-md-6(data-category="implement")
+                            .portfolio_item
+                                a.portfolio_item_link(href="#")
+                                .portfolio_item_name Проект “Glossy”
+                                .portfolio_item_image
+                                    img(src="images/example/img-portfolio-3.jpg")
+                        .col-12.col-md-6(data-category="implement")
+                            .portfolio_item
+                                a.portfolio_item_link(href="#")
+                                .portfolio_item_name ЖК Новодворянский
+                                .portfolio_item_image
+                                    img(src="images/example/img-portfolio-4.jpg")
+                        .col-12.col-md-6(data-category="visual")
+                            .portfolio_item
+                                a.portfolio_item_link(href="#")
+                                .portfolio_item_name ЖК Салют
+                                .portfolio_item_image
+                                    img(src="images/example/img-portfolio-5.jpg")
+                        .col-12.col-md-6(data-category="implement")
+                            .portfolio_item
+                                a.portfolio_item_link(href="#")
+                                .portfolio_item_name ЖК Панорама
+                                .portfolio_item_image
+                                    img(src="images/example/img-portfolio-6.jpg")
+            include partials/map
+            include partials/footer
+        include ./partials/header
+        include partials/scripts
+        script(src="js/vendor.js")
+        script(src="js/custom.js")
+        script(src="js/portfolio-filter.js")
