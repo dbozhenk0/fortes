@@ -10,7 +10,7 @@ html(lang="en")
                     .first-section_title Дизайн-проект и ремонт в одной компании
                     .first-section_descr Мы наделяем дома смыслом
                     .first-section_btn
-                        button.btn Обсудить проект
+                        a.btn(href="#modal-contact-form" data-fancybox) Обсудить проект
             section.about-section
                 .row.about-section_row
                     .col-12
@@ -33,7 +33,6 @@ html(lang="en")
                                 .work-item_title Дизайн-проект
                                 .work-item_btn
                                     a.btn(href="design-project.html") Подробнее
-
                     .col.col-lg-6
                         .work-item
                             .work-item_content
@@ -41,7 +40,7 @@ html(lang="en")
                                     img(src="images/required/homepage-main-image.png" alt="")
                                 .work-item_title Ремонт
                                 .work-item_btn
-                                    a.btn(href="#") Подробнее
+                                    a.btn(href="repairs.html") Подробнее
             section.steps-section
                 .steps-section_container
                     .steps-section_title Детально рассчитываем <mark>стоимость всего ремонта</mark> <mark>до</mark> разработки дизайн-проекта
@@ -65,7 +64,7 @@ html(lang="en")
                     .col-lg-5
                         .process-section_block
                             .process-section_image
-                                img(src="images/required/progress-image-1.jpg")
+                                img(src="images/required/progress-image-1.jpg" alt="")
                             .process-section_logo-wrap
                                 .process-section_logo
                     .col-lg-7
@@ -111,7 +110,7 @@ html(lang="en")
                                                     .process-item_text Проверяем качество каждой доставки, с заменой бракованных материалов.
 
                                 .col-12
-                                    button.btn.btn-dark Расчитать стоимость
+                                    a.btn.btn-dark(href="#modal-contact-form" data-fancybox) Расчитать стоимость
             section.process-section
                 .row.no-gutters
                     .col-lg-7
@@ -162,7 +161,7 @@ html(lang="en")
                     .col-lg-5
                         .process-section_block
                             .process-section_image
-                                img(src="images/required/progress-image-2.jpg")
+                                img(src="images/required/progress-image-2.jpg" alt="")
                             .process-section_logo-wrap.left-type
                                 .process-section_logo
             section.about-process
@@ -274,38 +273,37 @@ html(lang="en")
                                 a.portfolio_item_link(href="#")
                                 .portfolio_item_name ЖК Comfort City
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-1.jpg")
+                                    img(src="images/example/img-portfolio-1.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
                                 a.portfolio_item_link(href="#")
                                 .portfolio_item_name ЖК Comfort City
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-2.jpg")
+                                    img(src="images/example/img-portfolio-2.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
                                 a.portfolio_item_link(href="#")
                                 .portfolio_item_name Проект “Glossy”
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-3.jpg")
+                                    img(src="images/example/img-portfolio-3.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
                                 a.portfolio_item_link(href="#")
                                 .portfolio_item_name ЖК Новодворянский
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-4.jpg")
+                                    img(src="images/example/img-portfolio-4.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
                                 a.portfolio_item_link(href="#")
                                 .portfolio_item_name ЖК Салют
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-5.jpg")
+                                    img(src="images/example/img-portfolio-5.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
                                 a.portfolio_item_link(href="#")
                                 .portfolio_item_name ЖК Панорама
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-6.jpg")
-
+                                    img(src="images/example/img-portfolio-6.jpg" alt="")
                 .portfolio_footer
                     button.btn.btn-dark Смотреть все проекты
             section.team
@@ -314,21 +312,21 @@ html(lang="en")
                     .col-lg-4
                         .team_block
                             .team_block_img
-                                img(src="images/example/engineer.jpg")
+                                img(src="images/example/engineer.jpg" alt="")
                             .team_block_name Имя дизайнера
                             .team_block_position дизайнер
                             .team_block_descr Имеет 7 лет практического опыта, что позволяет усовершенствовать работу на каждом объекте и доводить ее до идеала!
                     .col-lg-4
                         .team_block
                             .team_block_img
-                                img(src="images/example/engineer.jpg")
+                                img(src="images/example/engineer.jpg" alt="")
                             .team_block_name Андрей Чиженок
                             .team_block_position инженер с 11 летним опытом
                             .team_block_descr Имеет 7 лет практического опыта, что позволяет усовершенствовать работу на каждом объекте и доводить ее до идеала!
                     .col-lg-4
                         .team_block
                             .team_block_img
-                                img(src="images/example/engineer.jpg")
+                                img(src="images/example/engineer.jpg" alt="")
                             .team_block_name Имя проект-менеджера
                             .team_block_position проект-менеджер
                             .team_block_descr Имеет 7 лет практического опыта, что позволяет усовершенствовать работу на каждом объекте и доводить ее до идеала!
@@ -345,6 +343,7 @@ html(lang="en")
                                 button.btn.btn-black Отправить запрос
             include partials/map
             include partials/footer
+            include partials/modal/modal-contact-form
         include partials/scripts
         script(src="js/vendor.js")
         script(src="js/custom.js")

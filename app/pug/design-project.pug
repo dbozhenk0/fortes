@@ -10,7 +10,7 @@ html(lang="en")
                     .first-section_title Дизайн-проект в Fortess
                     .first-section_descr Создаем вдохновляющие пространства, <br/> куда хочется возвращаться снова и снова
                     .first-section_btn
-                        button.btn Заказать дизайн-проект
+                        a.btn(href="#modal-contact-form" data-fancybox) Заказать дизайн-проект
             section.steps-section
                 .steps-section_container
                     .steps-section_title Детально рассчитываем <mark>стоимость всего ремонта</mark> <mark>до</mark> разработки дизайн-проекта
@@ -74,11 +74,11 @@ html(lang="en")
                                                     .process-item_text Проверяем качество каждой доставки, с заменой бракованных материалов.
 
                                 .col-12
-                                    button.btn.btn-dark Расчитать стоимость
+                                    a.btn.btn-dark(href="#modal-contact-form" data-fancybox) Расчитать стоимость
                     .col-lg-5
                         .process-section_block
                             .process-section_image
-                                img(src="images/required/progress-image-3.jpg")
+                                img(src="images/required/progress-image-3.jpg" alt="")
                             .process-section_logo-wrap
                                 .process-section_logo
 
@@ -137,46 +137,52 @@ html(lang="en")
                     .row.no-gutters
                         .col-12.col-md-6
                             .portfolio_item
+                                a.portfolio_item_link(href="#")
                                 .portfolio_item_name
                                     span.design-type тип дизайна
                                     | ЖК Comfort City
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-1.jpg")
+                                    img(src="images/example/img-portfolio-1.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
+                                a.portfolio_item_link(href="#")
                                 .portfolio_item_name
                                     span.design-type тип дизайна
                                     | ЖК Comfort City
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-2.jpg")
+                                    img(src="images/example/img-portfolio-2.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
+                                a.portfolio_item_link(href="#")
                                 .portfolio_item_name
                                     span.design-type тип дизайна
                                     | Проект “Glossy”
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-3.jpg")
+                                    img(src="images/example/img-portfolio-3.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
+                                a.portfolio_item_link(href="#")
                                 .portfolio_item_name
                                     span.design-type тип дизайна
                                     | ЖК Новодворянский
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-4.jpg")
+                                    img(src="images/example/img-portfolio-4.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
+                                a.portfolio_item_link(href="#")
                                 .portfolio_item_name
                                     span.design-type тип дизайна
                                     | ЖК Салют
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-5.jpg")
+                                    img(src="images/example/img-portfolio-5.jpg" alt="")
                         .col-12.col-md-6
                             .portfolio_item
+                                a.portfolio_item_link(href="#")
                                 .portfolio_item_name
                                     span.design-type тип дизайна
                                     | ЖК Панорама
                                 .portfolio_item_image
-                                    img(src="images/example/img-portfolio-6.jpg")
+                                    img(src="images/example/img-portfolio-6.jpg" alt="")
 
                 .portfolio_footer.dark
                     button.btn Смотреть все проекты
@@ -225,7 +231,7 @@ html(lang="en")
                                                 li Технологический расчет.
                                 .plans_item_bottom
                                     .plans_item_btn-wrap
-                                        button.btn.btn-black Заказать дизайн-проект
+                                        a.btn.btn-black(href="#modal-contact-form" data-fancybox) Заказать дизайн-проект
                                     .plans_item_descr *Действительно при заказе ремонта под ключ. Комплектация — подбор финишных материалов, мебели и элементов декора по специальным условиям.
                         .col-md-6
                             .plans_item
@@ -252,7 +258,7 @@ html(lang="en")
                                                 li Технологический расчет.
                                 .plans_item_bottom
                                     .plans_item_btn-wrap
-                                        button.btn.btn-black Заказать дизайн-проект
+                                        a.btn.btn-black(href="#modal-contact-form" data-fancybox) Заказать дизайн-проект
                                     .plans_item_descr *Действительно при заказе ремонта под ключ. Комплектация — подбор финишных материалов, мебели и элементов декора по специальным условиям.
             section.contact-form
                 .contact-form_title Давайте повысим комфорт вашего жизненного пространства вместе!
@@ -267,7 +273,7 @@ html(lang="en")
                                 button.btn.btn-black Отправить запрос
             include partials/map
             include partials/footer
+            include partials/modal/modal-contact-form
         include partials/scripts
         script(src="js/vendor.js")
-        script(src="js/custom.js")
         script(src="js/custom.js")

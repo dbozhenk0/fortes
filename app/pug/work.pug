@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    include partials/head
+    body
+        main.main-wrap
+            include ./partials/header
+            section.work-head
+                .work-head_image
+                    img(src="https://fortess.com.ua/wp-content/uploads/2019/08/3_Post.jpg" alt="")
+                .work-head_name ЖК Comfort City
+            section.work-info
+                .container
+                    .work-info_data
+                        p Населенный пункт:
+                        p Площадь: 130 м2
+                        p Сроки на выполнение: 7 месяцев
+                    .work-info_descr
+                        | Современный интерьер для молодых и амбициозных. Графичность линий, контраст цвета и фактур не дают унывать. Теплые, насыщенные оттенки дерева и текстиля придают интерьеру пластичности и комфорта. Лаконичный дизайн с максимумом внимания деталям и эргономике позволяют разместить все необходимые функциональные зоны и использовать каждый метр площади по максимуму.
+                    .work-info_image
+                        img(src="https://fortess.com.ua/wp-content/uploads/2018/10/2-res.jpg" alt="")
+                        img(src="https://fortess.com.ua/wp-content/uploads/2018/10/1-res.jpg" alt="")
+            include partials/map
+            include partials/footer
+            include partials/modal/modal-contact-form
+        include partials/scripts
+        script(src="js/vendor.js")
+        script(src="js/custom.js")
