@@ -1723,6 +1723,65 @@
   }
 }
 
+.difference {
+  padding: 60px;
+  .container {
+    max-width: 1200px;
+  }
+
+  &_items {
+    padding-top: 24px;
+  }
+
+  &_title {
+    font-size: 26px;
+    margin: 0;
+    padding: 28px 0;
+    font-family: @bold;
+    text-align: center;
+  }
+
+  &_item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &_content {
+      padding: 16px 42px;
+    }
+
+    &_icon {
+      margin-bottom: 40px;
+    }
+    &_text {
+      font-size: 16px;
+      color: #272727;
+      line-height: 20px;
+      font-weight: 400;
+      margin: 0 auto 40px;
+      max-width: 200px;
+      text-align: center;
+    }
+    &_btn {
+      a {
+        color: #000000;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: 600;
+        position: relative;
+        border: 1px solid #858585;
+        padding: 10px 13px;
+        border-radius: 4px;
+        display: block;
+        max-width: 230px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 767px) and (min-width: 320px) {
   .tarif {
     text-align: center;
