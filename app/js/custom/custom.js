@@ -1,10 +1,8 @@
 $(document).ready(function () {
     $('body').on('click', function (event) {
         $('.tooltip').removeClass('active');
-        console.log('T')
 
         if ($(event.target).hasClass('tooltip-icon')) {
-            console.log('TI')
             $(event.target).parent().find('.tooltip').toggleClass('active');
         }
     });
@@ -21,5 +19,10 @@ $(document).ready(function () {
         $('#price-table .' + tarif).addClass('active');
 
         $('html, body').scrollTo($('#price-table').offset().top, 1000);
+    });
+
+    $('.js-burger').click(function() {
+        $(this).toggleClass('active');
+        $('.header_nav').toggleClass('active');
     });
 });

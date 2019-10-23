@@ -15,19 +15,19 @@ html(lang="en")
                 .steps-section_container
                     .steps-section_title Детально рассчитываем <mark>стоимость всего ремонта</mark> <mark>до</mark> разработки дизайн-проекта
                     .row
-                        .col-lg-3
+                        .col-lg-6.col-xl-3
                             .step_icon
-                                .step-icon-1
+                                img(src="images/svg/step1.svg" alt="")
                             .step_text Подбираем и утверждаем подходящий стиль
-                        .col-lg-3
+                        .col-lg-6.col-xl-3
                             .step_icon
-                                .step-icon-2
+                                img(src="images/svg/step2.svg" alt="")
                             .step_text Вместе с вами определяем ценовой диапазон на материалы и технику. При необходимости оптимизируем расчет
-                        .col-lg-3
+                        .col-lg-6.col-xl-3
                             .step_icon
-                                .step-icon-3
+                                img(src="images/svg/step3.svg" alt="")
                             .step_text Помогаем вам в подборе материалов на стадии визуализации учитывая границы бюджета
-                        .col-lg-3.step-finish-item
+                        .col-lg-6.col-xl-3.step-finish-item
                             .step_finish Именно эти шаги позволяют нам завершить ремонт в рамках заданного бюджета
             section.process-section
                 .row.no-gutters
@@ -40,7 +40,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-1
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-1.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Контролируем каждый этап
@@ -49,7 +50,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-2
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-2.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Обеспечиваем лучший микроклимат
@@ -58,7 +60,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-3
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-3.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Подбираем оптимальные материалы и комплектацию
@@ -67,7 +70,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-4
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-4.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Предлагаем лучшие <br/> условия доставки
@@ -270,7 +274,8 @@ html(lang="en")
                             .col-lg-4
                                 input.contact-form_input(placeholder="Введите телефон")
                             .col-lg-4
-                                button.btn.btn-black Отправить запрос
+                                .contact-form_btn-wrap
+                                    button.btn.btn-black Отправить запрос
             include partials/map
             include partials/footer
             include partials/modal/modal-contact-form

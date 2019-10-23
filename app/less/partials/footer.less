@@ -1,0 +1,126 @@
+.footer {
+  background: #000;
+
+  &_top {
+    padding: 60px 60px 40px;
+  }
+
+  &_logo {
+    width: 228px;
+    height: 50px;
+    background: url(../images/svg/logo.svg) no-repeat center;
+    background-size: contain;
+    margin-bottom: 15px;
+  }
+
+  &_descr {
+    max-width: 280px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-family: @light;
+  }
+
+  &_bottom {
+    border-top: 1px solid #585858;
+    padding: 50px;
+
+    > .row {
+      align-self: center;
+    }
+  }
+
+  &_contact {
+    &_title {
+      font-size: @titleFont;
+      color: #fff;
+      font-family: @bold;
+      margin-bottom: 10px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    &_descr {
+      font-size: 16px;
+      font-weight: @light;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &_phone {
+      color: #fff;
+      font-size: 24px;
+      font-weight: @bold;
+    }
+  }
+
+  &_address {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &_socials {
+    &_item {
+      margin-right: 65px;
+      display: inline-block;
+
+      &.inst {
+        width: 35px;
+        height: 35px;
+        background: url(../images/svg/icon-inst.svg) no-repeat center;
+        background-size: contain;
+      }
+
+      &.fb {
+        width: 17px;
+        height: 34px;
+        background: url(../images/svg/icon-fb.svg) no-repeat center;
+        background-size: contain;
+      }
+
+      &.youtube {
+        width: 39px;
+        height: 38px;
+        background: url(../images/svg/icon-youtube.svg) no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .footer {
+    text-align: center;
+
+    &_logo {
+      margin: 0 auto 20px;
+    }
+
+    &_contact_title {
+      font-size: 24px;
+      margin-bottom: 15px;
+      height: auto;
+      display: block;
+    }
+
+    &_descr {
+      margin: 0 auto 15px;
+    }
+
+    &_contact_descr {
+      margin-bottom: 15px;
+    }
+
+    &_bottom {
+    }
+
+    &_socials_item {
+      margin-right: 35px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

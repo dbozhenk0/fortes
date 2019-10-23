@@ -25,7 +25,7 @@ html(lang="en")
                             .about-section_note-by Олег Бушанский founder Fortes
             section.work-item-section
                 .row.work-item_row
-                    .col.col-lg-6
+                    .col-12.col-lg-6
                         .work-item
                             .work-item_content
                                 .work-item_img
@@ -33,7 +33,7 @@ html(lang="en")
                                 .work-item_title Дизайн-проект
                                 .work-item_btn
                                     a.btn(href="design-project.html") Подробнее
-                    .col.col-lg-6
+                    .col-12.col-lg-6
                         .work-item
                             .work-item_content
                                 .work-item_img
@@ -45,19 +45,19 @@ html(lang="en")
                 .steps-section_container
                     .steps-section_title Детально рассчитываем <mark>стоимость всего ремонта</mark> <mark>до</mark> разработки дизайн-проекта
                     .row
-                        .col-lg-3
+                        .col-lg-6.col-xl-3
                             .step_icon
-                                .step-icon-1
+                                img(src="images/svg/step1.svg" alt="")
                             .step_text Подбираем и утверждаем подходящий стиль
-                        .col-lg-3
+                        .col-lg-6.col-xl-3
                             .step_icon
-                                .step-icon-2
+                                img(src="images/svg/step2.svg" alt="")
                             .step_text Вместе с вами определяем ценовой диапазон на материалы и технику. При необходимости оптимизируем расчет
-                        .col-lg-3
+                        .col-lg-6.col-xl-3
                             .step_icon
-                                .step-icon-3
+                                img(src="images/svg/step3.svg" alt="")
                             .step_text Помогаем вам в подборе материалов на стадии визуализации учитывая границы бюджета
-                        .col-lg-3.step-finish-item
+                        .col-lg-6.col-xl-3.step-finish-item
                             .step_finish Именно эти шаги позволяют нам завершить ремонт в рамках заданного бюджета
             section.process-section
                 .row.no-gutters
@@ -76,7 +76,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-1
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-1.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Контролируем каждый этап
@@ -85,7 +86,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-2
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-2.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Обеспечиваем лучший микроклимат
@@ -94,7 +96,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-3
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-3.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Подбираем оптимальные материалы и комплектацию
@@ -103,14 +106,16 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-4
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-4.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Предлагаем лучшие <br/> условия доставки
                                                     .process-item_text Проверяем качество каждой доставки, с заменой бракованных материалов.
 
                                 .col-12
-                                    a.btn.btn-dark(href="#modal-contact-form" data-fancybox) Расчитать стоимость
+                                    .process-item_btn-wrap
+                                        a.btn.btn-dark(href="#modal-contact-form" data-fancybox) Расчитать стоимость
             section.process-section
                 .row.no-gutters
                     .col-lg-7
@@ -122,7 +127,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-5
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-5.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Придерживаемся дедлайнов на каждом этапе
@@ -132,7 +138,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-6
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-6.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Составляем точную и прозрачную смету
@@ -142,7 +149,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-7
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-7.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Обеспечиваем видеонаблюдение
@@ -152,7 +160,8 @@ html(lang="en")
                                     .process-item
                                         .row
                                             .col-2
-                                                .process-item_icon.progress-icon-8
+                                                .process-item_icon
+                                                    img(src="images/svg/progress-icon-8.svg" alt="")
                                             .col-10
                                                 .process-item_content
                                                     .process-item_title Предоставляем страховку
@@ -165,73 +174,74 @@ html(lang="en")
                             .process-section_logo-wrap.left-type
                                 .process-section_logo
             section.about-process
-                .row
-                    .col-lg-6
-                        .about-process_title О процессах
-                        .about-process_steps-wrap
-                            .about-process_step
-                                .about-process_step_section
-                                    .about-process_step_number 1
-                                .about-process_step_section
-                                    .about-process_step_title Вы оставляете заявку
-                                    .about-process_step_text Наш менеджер связывается с вами
-                            .about-process_step
-                                .about-process_step_section
-                                    .about-process_step_number 2
-                                .about-process_step_section
-                                    .about-process_step_title Мы готовим смету
-                                    .about-process_step_text Анализируем ваш проект и рассчитываем максимально точную смету
-                            .about-process_step
-                                .about-process_step_section
-                                    .about-process_step_number 3
-                                .about-process_step_section
-                                    .about-process_step_title Составляем договор
-                                    .about-process_step_text Обеспечиваем страховку для безопасности вашего объекта
-                            .about-process_step
-                                .about-process_step_section
-                                    .about-process_step_number 4
-                                .about-process_step_section
-                                    .about-process_step_title Приступаем к работе
-                                    .about-process_step_text Подключаем круглосуточное видеонаблюдение
-                            .about-process_step
-                                .about-process_step_section
-                                    .about-process_step_number 5
-                                .about-process_step_section
-                                    .about-process_step_title Контролируем качество
-                                    .about-process_step_text Наши специалисты являются сертифицированными специалистами.
-                            .about-process_step
-                                .about-process_step_section
-                                    .about-process_step_number 6
-                                .about-process_step_section
-                                    .about-process_step_title Сдаем объект
-                                    .about-process_step_text И разделяем счастливые эмоции вместе в вами
+                .about-process_content
+                    .row
+                        .col-xl-6.col-lg-7
+                            .about-process_title О процессах
+                            .about-process_steps-wrap
+                                .about-process_step
+                                    .about-process_step_section
+                                        .about-process_step_number 1
+                                    .about-process_step_section
+                                        .about-process_step_title Вы оставляете заявку
+                                        .about-process_step_text Наш менеджер связывается с вами
+                                .about-process_step
+                                    .about-process_step_section
+                                        .about-process_step_number 2
+                                    .about-process_step_section
+                                        .about-process_step_title Мы готовим смету
+                                        .about-process_step_text Анализируем ваш проект и рассчитываем максимально точную смету
+                                .about-process_step
+                                    .about-process_step_section
+                                        .about-process_step_number 3
+                                    .about-process_step_section
+                                        .about-process_step_title Составляем договор
+                                        .about-process_step_text Обеспечиваем страховку для безопасности вашего объекта
+                                .about-process_step
+                                    .about-process_step_section
+                                        .about-process_step_number 4
+                                    .about-process_step_section
+                                        .about-process_step_title Приступаем к работе
+                                        .about-process_step_text Подключаем круглосуточное видеонаблюдение
+                                .about-process_step
+                                    .about-process_step_section
+                                        .about-process_step_number 5
+                                    .about-process_step_section
+                                        .about-process_step_title Контролируем качество
+                                        .about-process_step_text Наши специалисты являются сертифицированными специалистами.
+                                .about-process_step
+                                    .about-process_step_section
+                                        .about-process_step_number 6
+                                    .about-process_step_section
+                                        .about-process_step_title Сдаем объект
+                                        .about-process_step_text И разделяем счастливые эмоции вместе в вами
 
-                    .col-lg-6
-                        .about-process_block-container
-                            .about-process_block
-                                .row
-                                    .col-3
-                                        .about-process_block_icon
-                                    .col-9
-                                        .about-process_block_text Слышим и учитываем все пожелания наших клиентов
-                            .about-process_block
-                                .row
-                                    .col-3
-                                        .about-process_block_icon
-                                    .col-9
-                                        .about-process_block_text Помогаем и поддерживаем на каждом этапе
-                            .about-process_block
-                                .row
-                                    .col-3
-                                        .about-process_block_icon
-                                    .col-9
-                                        .about-process_block_text Дизайн, ремонт ... <br/> и эмпатия в одной компании!
+                        .col-xl-6.col-lg-5
+                            .about-process_block-container
+                                .about-process_block
+                                    .row
+                                        .col-3
+                                            .about-process_block_icon
+                                        .col-9
+                                            .about-process_block_text Слышим и учитываем все пожелания наших клиентов
+                                .about-process_block
+                                    .row
+                                        .col-3
+                                            .about-process_block_icon
+                                        .col-9
+                                            .about-process_block_text Помогаем и поддерживаем на каждом этапе
+                                .about-process_block
+                                    .row
+                                        .col-3
+                                            .about-process_block_icon
+                                        .col-9
+                                            .about-process_block_text Дизайн, ремонт ... <br/> и эмпатия в одной компании!
 
 
             section.reviews
                 .reviews_title Что говорят наши клиенты
                 .row
-                    .col-md-4
+                    .col-xl-4
                         .reviews_block
                             .reviews_block_content
                                iframe(width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/19XsYhg2vCU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
@@ -241,7 +251,7 @@ html(lang="en")
                                     a(href="#")
                                         span Открыть профиль
                                         span.fb-icon
-                    .col-md-4
+                    .col-xl-4
                         .reviews_block
                             .reviews_block_content
                                 iframe(width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/OpDbrf6xZkM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
@@ -251,7 +261,7 @@ html(lang="en")
                                     a(href="#")
                                         span Открыть профиль
                                         span.fb-icon
-                    .col-md-4
+                    .col-xl-4
                         .reviews_block
                             .reviews_block_content
                                 iframe(width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/VWAp82yKohw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
@@ -340,7 +350,8 @@ html(lang="en")
                             .col-lg-4
                                 input.contact-form_input(placeholder="Введите телефон")
                             .col-lg-4
-                                button.btn.btn-black Отправить запрос
+                                .contact-form_btn-wrap
+                                    button.btn.btn-black Отправить запрос
             include partials/map
             include partials/footer
             include partials/modal/modal-contact-form
