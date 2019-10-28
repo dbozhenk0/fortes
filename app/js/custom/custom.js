@@ -18,9 +18,9 @@ $(document).ready(function () {
 
         $('#price-table .' + tarif).addClass('active');
 
-        $('html, body').animate({
-            scrollTop: $("#price-table").offset().top
-        }, 2000);
+        $('html, body, .main-wrap').animate({
+            scrollTop: $("#price-table").offset().top - 80
+        }, 1000);
     });
 
     $('.js-burger').click(function() {
