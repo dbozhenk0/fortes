@@ -74,6 +74,23 @@
   //}
 }
 
+@media screen and (max-width: 1580px) {
+  .header {
+    &_wrap {
+      height: 80px;
+    }
+
+    &_logo {
+      width: 160px;
+      height: 40px;
+    }
+
+    &_nav {
+      font-size: 14px;
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .header {
     &_burger {
@@ -140,9 +157,11 @@
     &_burger {
       top: 15px;
     }
+
     &_wrap {
       height: 70px;
     }
+
     &_nav {
       &.active {
         top: 70px;

@@ -50,7 +50,7 @@
     &_phone {
       color: #fff;
       font-size: 24px;
-      font-weight: @bold;
+      font-family: @bold;
     }
   }
 
@@ -88,6 +88,36 @@
   }
 }
 
+@media screen and (max-width: 1580px) {
+  .footer {
+    &_top {
+      padding: 40px 30px;
+    }
+
+    &_logo {
+      width: 160px;
+      height: 40px;
+    }
+
+    &_descr {
+      font-size: 14px;
+    }
+
+    &_contact {
+      &_title {
+        font-size: 30px;
+      }
+
+      &_phone {
+        font-size: 20px;
+      }
+    }
+
+    &_bottom {
+      padding: 40px;
+    }
+  }
+}
 
 @media screen and (max-width: 992px) {
   .footer {
@@ -136,6 +166,7 @@
         font-size: 20px;
         margin-bottom: 10px;
       }
+
       &_phone {
         font-size: 20px;
       }
