@@ -1,0 +1,60 @@
+/* Widget binotel Ð¾Ð±Ð¾ÑÑ†Ð°Ð½Ð¸Ð¹ */
+body {
+  #bingc-active {
+    bottom: 0 !important;
+    background: #a2a2a2 !important;
+    z-index: 999 !important;
+    position: fixed !important;
+  }
+
+  #bingc-passive div.bingc-passive-overlay,
+  #bingc-phone-button div.bingc-phone-button-tooltip {
+    background: #a2a2a2 !important;
+  }
+
+  #bingc-passive div.bingc-passive-overlay a.bingc-passive-close-button svg polygon {
+    fill: #333 !important;
+  }
+
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-hour, #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-minutes,
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form a.bingc-passive-phone-form-button,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form div.bingc-active-get-phone-form-date-selection div.bingc-active-date-selection-select-hour, #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form div.bingc-active-get-phone-form-date-selection div.bingc-active-date-selection-select-minutes,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form a.bingc-active-phone-form-button,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form div.bingc-active-get-phone-form-date-selection div.bingc-active-date-selection-select-hour {
+    background: #8a8a8a !important;
+  }
+
+  #bingc-phone-button svg.bingc-phone-button-circle circle.bingc-phone-button-circle-inside,
+  #bingc-phone-button div.bingc-phone-button-tooltip svg.bingc-phone-button-arrow polyline {
+    fill: #a2a2a2 !important;
+  }
+
+  #bingc-phone-button:hover svg.bingc-phone-button-circle circle.bingc-phone-button-circle-inside {
+    fill: #2a2a2a !important;
+  }
+
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-day:hover,
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form a.bingc-passive-phone-form-button:hover,
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-hour:hover, #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-minutes:hover,
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-hour div.bingc-passive-date-selection-select-hour-list-of-hours-container ul.bingc-passive-date-selection-select-hour-list-of-hours li:hover,
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-minutes div.bingc-passive-date-selection-select-minutes-list-of-minutes-container ul.bingc-passive-date-selection-select-minutes-list-of-minutes li:hover,
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-day div.bingc-passive-date-selection-select-day-list-of-days-container ul.bingc-passive-date-selection-select-day-list-of-days li:hover,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form a.bingc-active-phone-form-button:hover,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form div.bingc-active-get-phone-form-date-selection div.bingc-active-date-selection-select-hour:hover,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form div.bingc-active-get-phone-form-date-selection div.bingc-active-date-selection-select-minutes:hover,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form div.bingc-active-get-phone-form-date-selection div.bingc-active-date-selection-select-hour div.bingc-active-date-selection-select-hour-list-of-hours-container ul.bingc-active-date-selection-select-hour-list-of-hours li:hover,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form div.bingc-active-get-phone-form-date-selection div.bingc-active-date-selection-select-minutes div.bingc-active-date-selection-select-minutes-list-of-minutes-container ul.bingc-active-date-selection-select-minutes-list-of-minutes li:hover,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-we-will-call-you.bingc-offline-form div.bingc-active-date-selection-select-day:hover,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-we-will-call-you.bingc-offline-form div.bingc-active-date-selection-select-day div.bingc-active-date-selection-select-day-list-of-days-container ul.bingc-active-date-selection-select-day-list-of-days li:hover {
+    background: #2a2a2a !important;
+  }
+
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-hour div.bingc-passive-date-selection-select-hour-list-of-hours-container ul.bingc-passive-date-selection-select-hour-list-of-hours li,
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-minutes div.bingc-passive-date-selection-select-minutes-list-of-minutes-container ul.bingc-passive-date-selection-select-minutes-list-of-minutes li,
+  #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-day div.bingc-passive-date-selection-select-day-list-of-days-container ul.bingc-passive-date-selection-select-day-list-of-days li,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form div.bingc-active-get-phone-form-date-selection div.bingc-active-date-selection-select-hour div.bingc-active-date-selection-select-hour-list-of-hours-container ul.bingc-active-date-selection-select-hour-list-of-hours li,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form div.bingc-active-get-phone-form-date-selection div.bingc-active-date-selection-select-minutes div.bingc-active-date-selection-select-minutes-list-of-minutes-container ul.bingc-active-date-selection-select-minutes-list-of-minutes li,
+  #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-we-will-call-you.bingc-offline-form div.bingc-active-date-selection-select-day div.bingc-active-date-selection-select-day-list-of-days-container ul.bingc-active-date-selection-select-day-list-of-days li {
+    color: #2a2a2a !important;
+  }
+}
